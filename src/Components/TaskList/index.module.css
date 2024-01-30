@@ -24,13 +24,19 @@
 .createBtn {
   width: 4rem;
   height: 4rem;
-
-  font-size: 4rem;
+  font-size: 3rem;
   color: lightslategray;
   font-weight: lighter;
   font-display: center;
   border-style: hidden;
   text-align: center;
   border-radius: 2rem;
-  background-color: rgb(232, 240, 255);
+  background-color: lavenderblush;
+}
+
+.createBtn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgba(189, 186, 186, 0.863);
+  box-shadow: 0px 0px 5px darkcyan;
 }

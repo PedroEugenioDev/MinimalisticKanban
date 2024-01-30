@@ -26,7 +26,7 @@ export default function TaskList(props) {
         </div>
         {props.name === "To do" ? (
           <button className={style.createBtn} onClick={handleNewTask}>
-            <GoPlus />
+            +
           </button>
         ) : (
           <></>
