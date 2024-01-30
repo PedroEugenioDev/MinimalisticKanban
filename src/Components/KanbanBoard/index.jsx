@@ -1,5 +1,6 @@
-import TaskList from "./TaskList/TaskList";
-import useKanban from "../hooks/useKanban";
+import TaskList from "../TaskList/TaskList";
+import useKanban from "../../hooks/useKanban";
+import style from "./index.module.css";
 
 export default function KanbanBoard() {
   const { kanbanDatabase } = useKanban();
@@ -10,14 +11,13 @@ export default function KanbanBoard() {
 
   return (
     <>
-      <div className="board">
+      <div className={style.board}>
         <h1 className="title">Minimalistic Kanban</h1>
-        <div className="container">
+        <div className={style.container}>
           <TaskList name="To do" list={kanbanDatabase[0]} />
           <TaskList name="Doing" list={kanbanDatabase[1]} />
           <TaskList name="Done" list={kanbanDatabase[2]} />
         </div>
-        <button onClick={teste}>TESTE</button>
       </div>
     </>
   );
