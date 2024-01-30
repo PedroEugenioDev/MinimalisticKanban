@@ -1,4 +1,4 @@
-import TaskList from "./TaskList";
+import TaskList from "./TaskList/TaskList";
 import useKanban from "../hooks/useKanban";
 
 export default function KanbanBoard() {
