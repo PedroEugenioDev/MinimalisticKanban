@@ -4,11 +4,6 @@ import style from "./index.module.css";
 
 export default function KanbanBoard() {
   const { kanbanDatabase } = useKanban();
-
-  const teste = () => {
-    console.log(kanbanDatabase);
-  };
-
   return (
     <>
       <div className={style.board}>
