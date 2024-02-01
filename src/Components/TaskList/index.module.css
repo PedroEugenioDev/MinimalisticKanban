@@ -1,0 +1,42 @@
+.list {
+  padding: 2rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: 30%;
+  border: 1px solid #55a7a29a;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 8px rgb(92, 92, 92);
+  font-family: "Khula", sans-serif;
+  background-color: lavenderblush;
+}
+.listTitle {
+  font-weight: 700;
+}
+
+.listItems {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.createBtn {
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  color: lightslategray;
+  font-weight: lighter;
+  font-display: center;
+  border-style: hidden;
+  text-align: center;
+  border-radius: 2rem;
+  background-color: lavenderblush;
+}
+
+.createBtn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgba(189, 186, 186, 0.863);
+  box-shadow: 0px 0px 5px darkcyan;
+}

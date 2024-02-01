@@ -1,9 +1,14 @@
-import KanbanBoard from "./Pages/KanbanBoard";
+import KanbanBoard from "./Components/KanbanBoard";
+import { KanbanContextProvider } from "./context/KanbanContext";
 
 export default function App() {
   return (
     <>
-      <KanbanBoard />
+      <KanbanContextProvider>
+        <div className="screen">
+          <KanbanBoard />
+        </div>
+      </KanbanContextProvider>
     </>
   );
 }
