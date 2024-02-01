@@ -13,13 +13,13 @@ export default function TaskList(props) {
   const handleNewTask = () => {
     createNewTask("Nova Tarefa");
   };
-  let buttonText = "";
+  let type = "";
   if (props.name === "To do") {
-    buttonText = "Start";
+    type = "start";
   } else if (props.name === "Doing") {
-    buttonText = "Finish";
+    type = "finish";
   } else {
-    buttonText = "Delete";
+    type = "delete";
   }
 
   return (
@@ -28,9 +28,7 @@ export default function TaskList(props) {
         <h2 className={style.listTitle}>{props.name}</h2>
         <div className={style.listItems}>
           {props.list.map((item) => {
-            return (
-              <Task name={item.name} btnText={buttonText} method={startTask} />
-            );
+            return <Task name={item.name} type={type} />;
           })}
         </div>
         {props.name === "To do" ? (
