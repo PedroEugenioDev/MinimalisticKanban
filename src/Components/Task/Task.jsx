@@ -14,28 +14,19 @@ export default function Task(props) {
     setNewTaskName(ev.target.value);
   };
 
-  const handleSubmit = (ev) => {
-    ev.preventDefault();
-    addTask(newTaskName);
-    props.set();
-  };
-
   if (props.type === "add") {
     return (
       <div className={style.task}>
-        <form>
-          <input
-            type="text"
-            name="taskName"
-            id="taskName"
-            placeholder="Task Name..."
-            value={newTaskName}
-            onChange={handleChange}
-          />
-          <button type="submit" onClick={handleSubmit}>
-            Add
-          </button>
-        </form>
+        <input
+          className="inputNewTask"
+          type="text"
+          name="taskName"
+          id="taskName"
+          placeholder="Task Name..."
+          value={newTaskName}
+          onChange={handleChange}
+        />
+        <Button type="add" taskName={newTaskName} set={props.set} />
       </div>
     );
   }

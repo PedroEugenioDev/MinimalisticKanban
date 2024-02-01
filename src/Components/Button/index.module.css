@@ -1,4 +1,4 @@
-.btnMove {
+.btnTask {
   padding: 0.5rem;
   width: 5rem;
   font-size: 1rem;
@@ -8,7 +8,7 @@
   box-shadow: 0px 0px 10px rgba(184, 184, 184, 0.822);
 }
 
-.btnMove:hover {
+.btnTask:hover {
   background-color: rgb(83, 185, 185);
   cursor: pointer;
 }

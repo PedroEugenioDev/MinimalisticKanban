@@ -2,9 +2,13 @@ import useKanban from "../../hooks/useKanban";
 import style from "./index.module.css";
 
 export default function Button(props) {
-  const { startTask, finishTask, deleteTask } = useKanban();
+  const { addTask, startTask, finishTask, deleteTask } = useKanban();
   let btnText, handler;
   switch (props.type) {
+    case "add":
+      btnText = "Add";
+      handler = addTask;
+      break;
     case "start":
       btnText = "Start";
       handler = startTask;
@@ -23,10 +27,13 @@ export default function Button(props) {
 
   const handleClick = () => {
     handler(props.taskName);
+    if (props.set) {
+      props.set();
+    }
   };
 
   return (
-    <button className={style.btnMove} onClick={handleClick}>
+    <button className={style.btnTask} onClick={handleClick}>
       {btnText}
     </button>
   );
