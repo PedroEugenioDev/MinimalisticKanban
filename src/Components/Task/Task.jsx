@@ -18,7 +18,7 @@ export default function Task(props) {
     return (
       <div className={style.task}>
         <input
-          className="inputNewTask"
+          className={style.inputNewTask}
           type="text"
           name="taskName"
           id="taskName"

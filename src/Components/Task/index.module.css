@@ -16,3 +16,11 @@
   font-family: "Khula", sans-serif;
   font-weight: 400;
 }
+
+.inputNewTask {
+  padding: 0.5rem 1rem;
+  height: 1.5rem;
+  border: 1px solid lightslategray;
+  border-radius: 1.5rem;
+  font-family: "Khula", sans-serif;
+}
