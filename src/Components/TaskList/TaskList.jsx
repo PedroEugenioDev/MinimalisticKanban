@@ -37,19 +37,15 @@ export default function TaskList(props) {
           {props.list.map((item) => {
             return <Task name={item.name} type={type} />;
           })}
+          {newTask === true ? (
+            <Task className={style.newTask} set={setNewtask} type="add" />
+          ) : null}
         </div>
-        {newTask === true ? (
-          <Task className={style.newTask} set={setNewtask} type="add" />
-        ) : (
-          <></>
-        )}
         {props.name === "To do" ? (
           <button className={style.createBtn} onClick={handleClick}>
             {newTask === true ? "-" : "+"}
           </button>
-        ) : (
-          <></>
-        )}
+        ) : null}
       </div>
     </>
   );
