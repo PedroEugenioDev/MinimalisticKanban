@@ -17,17 +17,20 @@ export function KanbanContextProvider({ children }) {
   const [doingList, setDoingList] = useState([]);
   const [doneList, setDoneList] = useState([]);
 
-  const createNewTask = (name) => {
-    const newTask = {
-      name: name /* 
-      description: description,
-      createdAt: Date(), */,
-    };
+  const addTask = (name) => {
+    if (name) {
+      const newTask = {
+        name: name /* 
+        description: description,
+        createdAt: Date(), */,
+      };
 
-    const todoList = kanbanDatabase[0];
-    todoList.push(newTask);
-    console.log(todoList);
-    setKanbanDatabase([todoList, kanbanDatabase[1], kanbanDatabase[2]]);
+      const todoList = kanbanDatabase[0];
+
+      todoList.push(newTask);
+      console.log(todoList);
+      setKanbanDatabase([todoList, kanbanDatabase[1], kanbanDatabase[2]]);
+    }
   };
 
   const startTask = (taskName) => {
@@ -67,7 +70,7 @@ export function KanbanContextProvider({ children }) {
     todoList,
     doingList,
     doneList,
-    createNewTask,
+    addTask,
     startTask,
     finishTask,
     deleteTask,
