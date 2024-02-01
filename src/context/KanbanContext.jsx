@@ -32,14 +32,34 @@ export function KanbanContextProvider({ children }) {
 
   const startTask = (taskName) => {
     const todoList = kanbanDatabase[0];
-    const DoingList = kanbanDatabase[1];
+    const doingList = kanbanDatabase[1];
     const index = todoList.findIndex((item) => {
-      item.name === taskName;
+      return item.name === taskName;
     });
     const taskToStart = todoList.splice(index, 1);
-    console.log(taskToStart);
-    DoingList.push(taskToStart[0]);
-    setKanbanDatabase([kanbanDatabase[0], DoingList, kanbanDatabase[2]]);
+    doingList.push(taskToStart[0]);
+    setKanbanDatabase([todoList, doingList, kanbanDatabase[2]]);
+  };
+
+  const finishTask = (taskName) => {
+    const doingList = kanbanDatabase[1];
+    const doneList = kanbanDatabase[2];
+    const index = doingList.findIndex((item) => {
+      return item.name === taskName;
+    });
+    const taskToFinish = doingList.splice(index, 1);
+    doneList.push(taskToFinish[0]);
+    setKanbanDatabase([kanbanDatabase[0], doingList, doneList]);
+  };
+
+  const deleteTask = (taskName) => {
+    const doneList = kanbanDatabase[2];
+    const index = doneList.findIndex((item) => {
+      return item.name === taskName;
+    });
+    doneList.splice(index, 1);
+    console.log(doneList);
+    setKanbanDatabase([kanbanDatabase[0], kanbanDatabase[1], doneList]);
   };
 
   const kanban = {
@@ -49,6 +69,8 @@ export function KanbanContextProvider({ children }) {
     doneList,
     createNewTask,
     startTask,
+    finishTask,
+    deleteTask,
   };
 
   return (
