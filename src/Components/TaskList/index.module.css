@@ -1,5 +1,6 @@
 .list {
   padding: 2rem 0rem;
+  min-width: 10rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

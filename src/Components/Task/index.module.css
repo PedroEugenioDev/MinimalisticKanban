@@ -1,14 +1,23 @@
 .task {
-  width: 25rem;
-  height: 5rem;
+  min-width: 8remrem;
+  height: fit-content;
   padding: 0.25rem 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-radius: 2rem;
   box-shadow: 0px 0px 8px darkcyan;
   font-family: "Khula", sans-serif;
   background-color: white;
+}
+
+@media (max-width: 720px) {
+  .task {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .taskTitle {
