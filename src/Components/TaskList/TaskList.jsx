@@ -41,11 +41,13 @@ export default function TaskList(props) {
             <Task className={style.newTask} set={setNewtask} type="add" />
           ) : null}
         </div>
-        {props.name === "To do" ? (
-          <button className={style.createBtn} onClick={handleClick}>
-            {newTask === true ? "-" : "+"}
-          </button>
-        ) : null}
+        <div className={style.btnContainer}>
+          {props.name === "To do" ? (
+            <button className={style.createBtn} onClick={handleClick}>
+              {newTask === true ? "-" : "+"}
+            </button>
+          ) : null}
+        </div>
       </div>
     </>
   );
