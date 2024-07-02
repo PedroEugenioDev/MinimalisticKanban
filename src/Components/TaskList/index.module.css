@@ -1,11 +1,6 @@
 .list {
   padding: 1rem;
-  min-width: 26rem;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 2rem;
-  align-items: center; */
+  width: 27rem;
   border: 1px solid #55a7a29a;
   border-radius: 1rem;
   box-shadow: 0px 0px 8px rgb(92, 92, 92);
@@ -24,6 +19,7 @@
   gap: 1rem;
   justify-content: space-evenly;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .btnContainer {
@@ -55,8 +51,6 @@
 
 @media (max-width: 768px) {
   .list {
-    padding: 1rem;
-    min-width: 16rem;
     gap: 1rem;
   }
 }
