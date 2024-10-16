@@ -13,8 +13,8 @@ A minimalistic Kanban board for personal organization develeped with React.
 ## 🔑 Key Features
 
 - The user can create new task at To-do list.
-- Tasks can be moved to Doing list from Todo list, then moved to Done list from Doin list.
-- All datas ar saved at local storage.
+- Tasks can be moved to Doing list from Todo list, then moved to Done list from Doing list.
+- All datas are saved at local storage.
 
 ## 💭 Process
 
