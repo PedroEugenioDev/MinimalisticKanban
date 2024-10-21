@@ -5,7 +5,7 @@ export default function App() {
   return (
     <>
       <KanbanContextProvider>
-        <div className="screen">
+        <div className="screen" >
           <KanbanBoard />
         </div>
       </KanbanContextProvider>
