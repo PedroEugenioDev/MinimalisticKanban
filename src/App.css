@@ -2,21 +2,22 @@
   --background-image: url("../public/themes/brown-wood-theme.jpg");
   --board-bg-color: #FFF;
   --list-bg-color: #E8E8E8;
+  --task-bg-color: #fff;;
   --themeBtn-bg-color: #FFF;
   --text-color: #000;
-  --btn-color: #A3A3A3;
-  --btn-hover: #717171;
+  --btn-color: #fff;
+  --btn-hover: #ccc;
 }
 
 .dark-theme {
   --background-image: url("../public/themes/starry-night-theme.jpg");
   --board-bg-color: #000;
   --list-bg-color: #2D2E32;
-  --task-bg-color: #616162;;
+  --task-bg-color: #616162;
   --themeBtn-bg-color: #000;
   --text-color: #EDEDED ;
-  --btn-color: #A3A3A3;
-  --btn-hover: #717171;
+  --btn-color: #000;
+  --btn-hover: #666;
 }
 
 * {
@@ -44,14 +45,20 @@
   margin-top: 0px;
   height: 50px;
   width: 50px;
-  background-color: var(--background-theme);
+  background-color: var(--btn-color);
   align-self: flex-end;
   color: var(--any-color);
+  border-radius: 15px 0px 0px 15px;
 }
 
 .themeBtn:hover {
-  background-color: rgb(83, 185, 185);
+  background-color: var(--btn-hover);
   cursor: pointer;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 1375px) {
