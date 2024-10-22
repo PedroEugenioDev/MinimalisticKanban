@@ -1,20 +1,57 @@
+.light-theme {
+  --background-image: url("../public/themes/brown-wood-theme.jpg");
+  --board-bg-color: #FFF;
+  --list-bg-color: #E8E8E8;
+  --themeBtn-bg-color: #FFF;
+  --text-color: #000;
+  --btn-color: #A3A3A3;
+  --btn-hover: #717171;
+}
+
+.dark-theme {
+  --background-image: url("../public/themes/starry-night-theme.jpg");
+  --board-bg-color: #000;
+  --list-bg-color: #2D2E32;
+  --task-bg-color: #616162;;
+  --themeBtn-bg-color: #000;
+  --text-color: #EDEDED ;
+  --btn-color: #A3A3A3;
+  --btn-hover: #717171;
+}
+
 * {
   padding: 0px;
   margin: 0px;
-  background-color: E8E8E8;
 }
 
 .screen {
   padding: 0;
   margin: 0;
-  background: url("../public/themes/brown-wood-theme.jpg") #f5f5f5;
+  background-image: var(--background-image);
+  background-color: var(--board-bg-color);
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
   background-repeat: repeat;
   display: flex; 
+  flex-direction: column;
   justify-content: center; 
   align-items: center;
+  color: var(--text-color);
+}
+
+.themeBtn{
+  margin-top: 0px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--background-theme);
+  align-self: flex-end;
+  color: var(--any-color);
+}
+
+.themeBtn:hover {
+  background-color: rgb(83, 185, 185);
+  cursor: pointer;
 }
 
 @media (max-width: 1375px) {

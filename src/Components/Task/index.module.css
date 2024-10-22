@@ -8,7 +8,7 @@
   border-radius: 2rem;
   box-shadow: 0px 0px 8px darkcyan;
   font-family: "Khula", sans-serif;
-  background-color: white;
+  background-color: var(--task-bg-color);
 }
 
 .taskTitle {
@@ -16,7 +16,7 @@
   word-wrap: break-word; 
   word-break: break-word; 
   white-space: normal;
-  background-color: white;
+  background-color: var(--task-bg-color);
   font-size: 1.17em;
   font-family: "Khula", sans-serif;
   font-weight: 400;

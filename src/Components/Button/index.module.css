@@ -5,7 +5,7 @@
   background-color: rgb(79, 206, 206);
   border-radius: 1rem;
   border-style: hidden;
-  box-shadow: 0px 0px 10px rgba(184, 184, 184, 0.822);
+  box-shadow: 0px 0px 10px #A3A3A3 ;
 }
 
 .btnTask:hover {

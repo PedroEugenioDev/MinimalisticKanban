@@ -1,4 +1,6 @@
-.list {
+@import "../../App.css";
+
+.list{
   padding: 1.5rem;
   width: 22rem;
   min-height: 420px;
@@ -6,8 +8,9 @@
   border-radius: 1rem;
   box-shadow: 0px 0px 8px rgb(92, 92, 92);
   font-family: "Khula", sans-serif;
-  background-color: #E8E8E8  ;
+  background-color: var(--list-bg-color);
 }
+
 .listTitle {
   margin-bottom: 1rem;
   text-align: center;
@@ -21,6 +24,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-shrink: 1;
+  background-color: var(--list-bg-color);
 }
 
 .btnContainer {
@@ -40,7 +44,7 @@
   text-align: center;
   align-self: center;
   border-radius: 2rem;
-  background-color: #E8E8E8;
+  background-color: var(--list-bg-color);
 }
 
 .createBtn:hover {
