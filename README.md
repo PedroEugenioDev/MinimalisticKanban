@@ -52,10 +52,10 @@ You can access and use a functional version of this project at Vercel:
 
 <p align="center"><em>Light theme desktop screenshot</em></p>
 <div align="center">
-    <img src="/images/light-theme-screenshot.png" alt="Light theme desktop screenshot" title="Light theme desktop screenshot" width="480px">
+    <img src="/public/images/light-theme-screenshot.png" alt="Light theme desktop screenshot" title="Light theme desktop screenshot" width="480px">
 </div>
 <br>
 <p align="center"><em>Dark theme desktop screenshot</em></p>
 <div align="center">
-    <img src="/images/dark-theme-screenshot.png" alt="dark theme desktop screenshot" title="Dark theme desktop screenshot" width="480px">
+    <img src="/public/images/dark-theme-screenshot.png" alt="dark theme desktop screenshot" title="Dark theme desktop screenshot" width="480px">
 </div>
